@@ -6,11 +6,11 @@ const initState = {
 	units: {
 		footman: {
 			count: 0,
-			name: '',
-			description: '',
-			cost: 0,
-			attack: 0,
-			hp: 0
+			name: 'Footman',
+			description: 'Basic infratry unit',
+			cost: 120,
+			attack: 7,
+			hp: 50
 		},
 		archer: {
 			count: 0,
@@ -25,19 +25,25 @@ const initState = {
 		},
 		pikeman: {
 			count: 0,
-			name: '',
-			description: '',
-			cost: 0,
-			attack: 0,
-			hp: 0
+			name: 'Pikeman',
+			description: 'Spear-wielding light infratry, strong vs cavalry',
+			cost: 140,
+			attack: 5,
+			hp: 40,
+			bonud: {
+				light: 4
+			}
 		},
 		knight: {
 			count: 0,
-			name: '',
-			description: '',
-			cost: 0,
-			attack: 0,
-			hp: 0
+			name: 'Knight',
+			description: 'Heavy-armored cavalry unit, strong vs ranged',
+			cost: 260,
+			attack: 12,
+			hp: 160,
+			bonus: {
+				ranged: 4
+			}
 		}
 	}
 }
